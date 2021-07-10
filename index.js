@@ -6,7 +6,7 @@ const express = require('express'),
 const path = require('path');
 const cors = require('cors');
 var mqtt = require('./src/mqtt/index')
-mongoose.connect('mongodb://192.168.0.104:27017/smarthome', {
+mongoose.connect('mongodb+srv://quochuy:10112000@cluster0.th0zi.mongodb.net/smarthome?retryWrites=true&w=majority', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
